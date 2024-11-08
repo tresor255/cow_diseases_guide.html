@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Health Guide</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <!-- Logo on the left -->
+        <a href="index.html" class="logo">
+            <img src="tre.jpg" alt="Cow Health Guide Logo">
+            <h1>Cow Health Guide</h1>
+        </a>
+        
+        <!-- Centered navigation links -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- Sign Up and Log In buttons on the right -->
+        <div class="header-buttons">
+            <a href="signup.html" class="button">Sign Up</a>
+            <a href="login.html" class="button">Log In</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile View -->
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</header>
+
+<!-- Side Panel for Mobile View -->
+<div id="sidePanel" class="side-panel">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="diseases.html">Diseases</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html" class="button">Sign Up</a>
+    <a href="login.html" class="button">Log In</a>
+</div>
+
+<!-- Main Content -->
+<main>
+    <section class="welcome-section">
+        <h2 style="color: white;">Welcome to the Cow Health Guide</h2>
+        <p style="color: white;">
+            Your trusted source for cow care and disease treatment solutions, based in Rwanda. We provide expert advice and services to support farmers and veterinarians in keeping cattle healthy and productive.
+        </p>
+    </section>
+
+    <!-- Additional Scrollable Sections -->
+    <section class="scroll-section">
+        <h3>Getting Started</h3>
+        <p>
+            Discover the best practices for managing cow health. Our guide includes essential tips, tools, and techniques to ensure a healthy herd.
+        </p>
+    </section>
+
+    <section class="scroll-section">
+        <h3>Our Services</h3>
+        <p>
+            We offer a wide range of services tailored to the needs of farmers and veterinarians. From disease diagnosis to preventive care, we are here to help.
+        </p>
+    </section>
+</main>
+<div class="social-media">
+    <a href="https://www.facebook.com/YourPage" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.twitter.com/YourPage" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/YourPage" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/YourPage" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+<section id="services">
+    <h2 style="color:black;">Our Services</h2>
+    <div class="service-item">Disease Diagnosis</div>
+    <div class="service-item">Preventive Care</div>
+    <div class="service-item">Health Consultations</div>
+    <div class="service-item">Farm Management Advice</div>
+    <!-- Add more as needed -->
+</section>
+
+
+    <h2 style="color:black;">Our History</h2>
+    <p style="color: whitesmoke">Founded in 2000, Cow Health Guide has been dedicated to supporting farmers and veterinarians in Rwanda...</p>
+</section>
+<section id="experience">
+    <h2 style="color:black;">Our Experience</h2>
+    <p style="color:whitesmoke>With over 7 years of experience in cattle health and disease prevention, our team is highly skilled...</p>
+</section><br><br>
+<footer>
+    <div class="footer-info">
+        <p style="color: wheat">&copy; 2024 Cow Health Guide</p>
+        <p style="color: wheat">Contact: info@cowhealthguide.com | Phone: +250 123 456 789</p>
+    </div>
+    <div class="footer-links">
+        <a href="#services">Our Services</a> | <a href="#history">Our History</a> | <a href="#experience">Our Experience</a>
+    </div>
+</footer>
+
+<script src="common.js"></script>
+</body>
+</html>

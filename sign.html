@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Health Guide</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <!-- Logo on the left -->
+        <a href="index.html" class="logo">
+            <img src="mybg.jpg" alt="Cow Health Guide Logo">
+            <h1>Cow Health Guide</h1>
+        </a>
+        
+        <!-- Centered navigation links -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- Sign Up and Log In buttons on the right -->
+        <div class="header-buttons">
+            <a href="sign.html" class="button">Sign Up</a>
+            <a href="login.html" class="button">Log In</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile View -->
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</header>
+
+<!-- Side Panel for Mobile View -->
+<div id="sidePanel" class="side-panel">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="desease.html">Diseases</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html" class="button">Sign Up</a>
+    <a href="login.html" class="button">Log In</a>
+</div>
+
+<!-- Sign Up Form -->
+<main id="signup">
+    <h2>Sign Up</h2>
+    <form class="auth-form">
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" name="username" required>
+
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="email" required>
+
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" required>
+
+        <button type="submit" class="submit-button">Create Account</button>
+    </form>
+</main>
+
+<script src="common.js"></script>

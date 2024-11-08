@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Health Guide</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <!-- Logo on the left -->
+        <a href="index.html" class="logo">
+            <img src="mybg.jpg" alt="Cow Health Guide Logo">
+            <h1>Cow Health Guide</h1>
+        </a>
+        
+        <!-- Centered navigation links -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- Sign Up and Log In buttons on the right -->
+        <div class="header-buttons">
+            <a href="signup.html" class="button">Sign Up</a>
+            <a href="login.html" class="button">Log In</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile View -->
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</header>
+
+<!-- Side Panel for Mobile View -->
+<div id="sidePanel" class="side-panel">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="desease.html">Diseases</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html" class="button">Sign Up</a>
+    <a href="login.html" class="button">Log In</a>
+</div>
+
+<!-- Main Content -->
+<main id="about" style="background-image: url('v.jpg');">
+    <h2>About Us</h2>
+    <p>We are dedicated to providing accurate and comprehensive information about cow health. Our goal is to support cattle owners with resources to help keep their livestock healthy and thriving.</p><br><br>
+    <p><strong>Email:</strong> <a href="mailto:mugishatrsr@gmail.com">mugishatrsr@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+250783208404">+250783208404</a></p>
+    <p><strong>Address:</strong> <a href="address">Musanze-Muhoza</a></p>
+    <p><strong>Street::</strong> <a href="Street">KN34</a></p>
+</main>
+<script src="common.js"></script>

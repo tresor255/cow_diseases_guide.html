@@ -1,0 +1,579 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('tre.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #2a3b4c;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 100%;
+    width:100px;
+    
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffab40;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons .button {
+    padding: 8px 16px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header-buttons .button:hover {
+    background-color: #e64a19;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Side Panel for Mobile View */
+.side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-panel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-panel a:hover {
+    color: #ff5722;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #ff5722;
+}
+
+/* Main content styling */
+main {
+    padding: 40px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-section {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.scroll-section {
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: scroll;
+    max-height: 150px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2a3b4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: yellow;
+    text-decoration: none;
+    width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav, .header-buttons {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+/* Diseases Section Styling */
+#diseases {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+#diseases h2 {
+    font-size: 2.5em;
+    color: #ffab40;
+    margin-bottom: 30px;
+}
+
+/* Disease List Grid */
+.disease-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Disease Card */
+.disease {
+    background-color: rgba(42, 59, 76, 0.95); /* Dark background with transparency */
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.disease:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.disease img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.disease h3 {
+    font-size: 1.8em;
+    color: #ffab40;
+    margin-bottom: 10px;
+}
+
+.disease p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Strong text styling for emphasis */
+strong {
+    color: black;
+    font-weight:600;
+}
+
+body {
+    background-color: #f0f0f0; /* Set a general light background color for the page */
+    font-family: Arial, sans-serif;
+    color: #333;}
+    
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    text-align: center;
+}
+
+.about {
+    background-image: url('h.jpeg'); /* Add your image file here */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Text color for better contrast */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%; /* Ensures responsiveness */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7); /* Fallback color with transparency */
+}
+/* Set the background image for the contact section */
+/* Adding a darker overlay to improve text visibility */
+/* Centering the form vertically and horizontally */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-image: url('path/to/your/cow-field-image.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Adding overlay for better contrast */
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Styling the form container */
+.form-container {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Enhancing the input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Light background for readability */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ff6b3b; /* Focus color for interactive feedback */
+    outline: none;
+}
+
+/* Styling the button */
+button {
+    background-color: #ff6b3b;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: wheat;
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Click effect */
+}
+
+/* Making the heading stand out */
+h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.text-overlay {
+    background-color: transparent; /* or remove this line entirely if not needed */
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+#services, #history, #experience {
+    padding: 40px;
+    
+    margin: 20px 0;
+    border-radius: 0px;
+}
+.service-item {
+    margin: 10px 0;
+}
+.social-media i {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color:grey;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #2c3e50;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Banner Image */
+.banner {
+    position: relative;
+    background-image: url('your-banner-image.jpg'); /* Add the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background for readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #555;
+    text-align: center;
+}
+
+/* Flexbox Layout for Services */
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background-color:white;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media i {
+    font-size: 24px;
+    margin: 0 10px;
+    color:grey;
+    transition: color 0.3s ease;
+}
+
+footer .social-media i:hover {
+    color: #3498db;/* General styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Header styling */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #2e3b4e;
+        color: white;
+        align-items: center;
+    }
+    
+    .navbar h1 {
+        color: white;
+    }
+    
+    .navbar nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    .navbar button {
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    
+    .signup {
+        background-color: #f48c06;
+        color: white;
+    }
+    
+    .login {
+        background-color: #e63946;
+        color: white;
+    }
+    
+    /* Background and Text styling */
+    .background {
+        background-image: url('path/to/your/image.jpg'); /* Add your background image here */
+        background-size: cover;
+        background-position: center;
+        padding: 60px 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    /* Text container styling */
+    .text-container {
+        max-width: 600px;
+        text-align: center;
+        margin: 20px 0;
+        color: #fff;
+    }
+    
+    .text-container h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Strong shadow for readability */
+    }
+    
+    .text-container p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Shadow to enhance readability */
+    }
+    
+    /* Add padding for a polished look */
+    .text-container h2, .text-container p {
+        padding: 5px;
+    }
+    
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Health Guide</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <!-- Logo on the left -->
+        <a href="index.html" class="logo">
+            <img src="mybg.jpg" alt="Cow Health Guide Logo">
+            <h1>Cow Health Guide</h1>
+        </a>
+        
+        <!-- Centered navigation links -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="diseases.html">Diseases</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- Sign Up and Log In buttons on the right -->
+        <div class="header-buttons">
+            <a href="sign.html" class="button">Sign Up</a>
+            <a href="login.html" class="button">Log In</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile View -->
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</header>
+
+<!-- Side Panel for Mobile View -->
+<div id="sidePanel" class="side-panel">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="desease.html">Diseases</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="sign.html" class="button">Sign Up</a>
+    <a href="login.html" class="button">Log In</a>
+</div>
+
+<!-- Main Content -->
+<!-- Diseases Section -->
+<main id="diseases">
+    <h2 style="color: black;">Common Cow Diseases</h2>
+    <section class="disease-list">
+        <div class="disease"><img src="Mastitis.jpg" alt="Mastitis">
+            <h3 >Mastitis</h3>
+            <p><strong>Symptoms:</strong> Swollen udder, pain, abnormal milk.</p>
+            <p><strong>Treatment:</strong> Antibiotics and hygiene management.</p>
+        </div>
+        <div class="disease"><img src="Foot and Mouth Disease.jpeg" alt="Foot and Mouth Disease ">
+            <h3>Foot and Mouth Disease (FMD)</h3>
+            <p><strong>Symptoms:</strong> Blisters, fever, lameness.</p>
+            <p><strong>Treatment:</strong> Vaccination and isolation of infected animals.</p>
+        </div>
+        <div class="disease"><img src="Johne’s Disease.jpeg" alt="Johne’s Disease">
+            <h3 >Johne’s Disease</h3>
+            <p><strong>Symptoms:</strong> Chronic diarrhea, weight loss despite a good appetite, decreased milk production.</p>
+            <p><strong>Treatment:</strong> No effective treatment; control through testing, culling, and improving sanitation practices.</p>
+        </div>
+        <div class="disease"><img src="Lumpy Skin Disease.jpeg" alt="Lumpy Skin Disease">
+            <h3 >Lumpy Skin Disease</h3>
+            <p><strong>Symptoms:</strong> Diarrhea, dehydration, weakness, weight loss.</p>
+            <p><strong>Treatment:</strong> No effective treatment once symptoms show; prevention through vaccination and quick culling of infected animals..</p>
+        </div>
+        <div class="disease"><img src="Blackleg.jpeg" alt="Blackleg">
+            <h3 >Blackleg</h3>
+            <p><strong>Symptoms:</strong> Swelling, fever, lameness, muscle tissue death.</p>
+            <p><strong>Treatment:</strong> No effective treatment; control through testing, culling, and improving sanitation practices.</p>
+        </div>
+        <div class="disease">        
+            <img src="Bloat.jpeg" alt="Bloat">
+
+            <h3 >Bloat</h3>
+            <p><strong>Symptoms:</strong>Sudden death, bleeding from orifices, high fever, swelling..</p>
+            <p><strong>Treatment:</strong> Immediate isolation of affected animals, vaccination, and antibiotic treatment if detected early..</p>
+        </div>
+        <div class="disease"><img src="Brucellosis.jpeg" alt="Brucellosis">
+            <h3 >Brucellosis</h3>
+            <p><strong>Symptoms:</strong>Distended left side of the abdomen, difficulty breathing, discomfort..</p>
+            <p><strong>Treatment:</strong> Oral anti-foaming agents, stomach tube, trocharization in severe cases, and dietary adjustments..</p>
+        </div>
+        <div class="disease"><img src="Anthrax.jpeg" alt="Anthrax">
+            <h3 >Anthrax</h3>
+            <p><strong>Symptoms:</strong>Sudden death, bleeding from orifices, high fever, swelling...</p>
+            <p><strong>Treatment:</strong> Oral anti-foaming agents, stomach tube, trocharization in severe cases, and dietary adjustments..</p>
+        </div>
+        <!-- Add more diseases as needed -->
+    </section>
+</main>
+
+
+<script src="common.js"></script>

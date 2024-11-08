@@ -1,0 +1,84 @@
+/* Contact, Sign Up, and Log In Form Styling */
+
+main#contact, main#signup, main#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(42, 59, 76, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ffab40;
+    margin-bottom: 20px;
+}
+
+/* General Form Layout */
+form {
+    background-color: #2a3b4c;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    color: #ffab40;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ffab40;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: white;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button Styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffab40;
+    color: #2a3b4c;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ffa726;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main#contact, main#signup, main#login {
+        padding: 15px;
+    }
+    form {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}
